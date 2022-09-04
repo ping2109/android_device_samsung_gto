@@ -13,9 +13,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit from gto device
 $(call inherit-product, device/samsung/gto/device.mk)
 
-# Inherit some common Omni stuff.
+# Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
-$(call inherit-product, vendor/twrp/config/gsm.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gto
